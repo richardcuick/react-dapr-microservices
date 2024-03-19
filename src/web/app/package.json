@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "author": "崔驰坤 Cui, Richard Chikun <richardcuick@outlook.com>",
+  "scripts": {
+    "dev": "max dev",
+    "build": "max build",
+    "format": "prettier --cache --write .",
+    "prepare": "husky install",
+    "postinstall": "max setup",
+    "setup": "max setup",
+    "start": "npm run dev",
+    "rebuild-deps": "electron-builder install-app-deps",
+    "electron:init": "max electron init",
+    "electron:dev": "max dev electron",
+    "electron:dir": "max build electron --dir",
+    "electron:build:win": "max build electron --win",
+    "electron:build:mac": "max build electron --mac",
+    "electron:build:linux": "max build electron --linux"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.3.4",
+    "@ant-design/pro-components": "^2.6.50",
+    "@fluentui/fluent2-theme": "^8.107.66",
+    "@fluentui/react": "^8.115.7",
+    "@fluentui/react-charting": "^5.19.35",
+    "@fluentui/react-components": "^9.47.1",
+    "@umijs/max": "^4.1.2",
+    "antd": "^5.15.3",
+    "chart.js": "^4.4.2",
+    "react-chartjs-2": "^5.2.0"
+  },
+  "devDependencies": {
+    "@liangskyli/umijs-plugin-electron": "^0.3.1",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "electron": "^29.1.4",
+    "electron-builder": "^24.13.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-packagejson": "^2.4.12",
+    "tailwindcss": "^3",
+    "typescript": "^5.4.2"
+  },
+  "name": "umi_electron_app",
+  "version": "0.0.1"
+}

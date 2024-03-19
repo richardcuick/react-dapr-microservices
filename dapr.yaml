@@ -1,0 +1,7 @@
+version: 1
+apps:
+  - appID: helloworld # optional
+    appDirPath: src/services/helloworld/ # REQUIRED
+    appProtocol: http
+    appPort: 3000
+    command: ["node", "app.js"]

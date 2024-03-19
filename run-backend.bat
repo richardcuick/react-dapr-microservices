@@ -1,0 +1,1 @@
+dapr run -f dapr.yaml

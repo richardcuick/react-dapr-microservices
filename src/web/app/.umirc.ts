@@ -44,6 +44,11 @@ export default defineConfig({
       path: "/linechart2",
       component: "./linechart2",
     },
+    {
+      name: "主题-边框",
+      path: "/theme-border",
+      component: "./theme-border",
+    },
   ],
 
   npmClient: "pnpm",

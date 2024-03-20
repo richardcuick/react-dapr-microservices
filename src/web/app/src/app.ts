@@ -7,6 +7,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { FluentProvider, teamsLightTheme } from '@fluentui/react-components';
 
+import { ThemeProvider } from '@fluentui/react';
+import { Fluent2WebLightTheme, Fluent2WebDarkTheme } from '@fluentui/fluent2-theme';
+
 export async function getInitialState(): Promise<{ name: string }> {
   return { name: '@umijs/max' };
 }
@@ -19,3 +22,7 @@ export const layout = () => {
     },
   };
 };
+
+export function rootContainer(container: any, args: any) {
+  return React.createElement(ThemeProvider, null, container);
+}
